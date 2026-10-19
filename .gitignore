@@ -1,0 +1,4 @@
+# Track only the exported conversation
+*
+!.gitignore
+!conversation.md
