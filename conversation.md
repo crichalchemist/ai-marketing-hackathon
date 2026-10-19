@@ -1,6 +1,6 @@
 # Claude Code conversation: inDrive Nigeria Q4 2026 case
 
-Exported from the Claude Code session used for the Stage 1 hand-in. Shows user messages, Claude's replies, and a one-line note for each tool call. Tool outputs, hidden reasoning and system context are omitted.
+Exported from the Claude Code session used for the Stage 1 hand-in. Shows user messages, Claude's replies, and a one-line note for each tool call. Tool outputs, hidden reasoning, subagent reports and system context are omitted.
 
 ## User
 
@@ -243,4 +243,36 @@ this is good as it is currently. let's export this conversation to the root of t
 > 🔧 Bash: Inspect transcript structure and gh auth
 > 🔧 Bash: Inspect attachment types and user messages
 > 🔧 Bash: Export conversation to markdown and scan for sensitive strings
+> 🔧 Bash: Check export structure
+> 🔧 Bash: Check repo name, write gitignore, init and stage
+
+## User (sent mid-turn)
+
+since we've got 26 minutes, let's run an adversarial pass on what we've got? see if there are any improvements that can be made?
+
+## Claude
+
+Pushing the repo first, then starting the adversarial review.
+
+> 🔧 Bash: Commit, create public repo, dump solution for review
+> 🔧 Agent: Adversarial review of case submission
+
+The repo is live at https://github.com/crichalchemist/ai-marketing-hackathon. It holds only `conversation.md` and `.gitignore`; everything else is ignored. The export stops before this turn, so I'll re-export and push again at the end.
+
+A separate reviewer is now going through the submission like a strict judge would. It's checking every number against the CSV, every line against the brand-fit and production rules, whether the brief is complete, and the update answers. It's capped at about 6 minutes. When it reports back I'll sort its findings and bring you only the ones worth fixing, with the exact changes.
+
+The review came back with 12 findings. Before applying them I'm checking the two it couldn't confirm itself: whether Pidgin's edge disappears once channel is accounted for, and inDrive's exact lime colour, sampled from the real ad.
+
+> 🔧 Bash: Verify Pidgin confound and sample inDrive lime hex
+
+Both checks confirm the reviewer. Pidgin's edge goes away within the same channel: on Google, English cost $1.35 per first ride against Pidgin's $2.03. The lime is #C1F11D. Applying the fixes:
+
+> 🔧 Bash: Apply verified review fixes to the solution sheet
+
+Fixes are in. Re-exporting the conversation and pushing:
+
+> 🔧 Bash: Re-export conversation, commit and push
+> 🔧 Bash: Find which user entries contain scratchpad paths
+> 🔧 Bash: Locate scratchpad path in assistant text
+> 🔧 Bash: Re-export with human-only queued messages and push
 
