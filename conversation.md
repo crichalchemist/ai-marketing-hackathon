@@ -276,3 +276,70 @@ Fixes are in. Re-exporting the conversation and pushing:
 > 🔧 Bash: Locate scratchpad path in assistant text
 > 🔧 Bash: Re-export with human-only queued messages and push
 
+I applied 11 of the reviewer's 12 findings to `stage-1-solution.xlsx` and pushed the updated conversation to the repo. The budget still totals $30,000, no banned words appear outside the "Must not appear" list, and `how-you-worked.txt` matches the sheet again.
+
+**What the review caught and I fixed:**
+1. **Wrong number in insight 1.** I'd said winners turn 36–56% of installs into first rides, but NG-07's real rate is 28%; the 56% was its click-to-install rate. Now 28–51%, and I fixed the same mistake in H1.
+2. **Pidgin's edge wasn't real.** Both Pidgin ads ran only on Google, where English did better ($1.35 vs $2.03 per first ride). Insight 4 now calls the edge unproven, and the brief asks for Pidgin and English voiceovers over the same visuals, run against each other. This is also now catch (4) in "How you worked".
+3. **Format cells:** each is now one of the template's options. H1 and H2 are 9:16 motion (H2's described as AI-generated) and H3 is static.
+4. **Budget now follows the ranking:** H1 $12k, H2 $10k, H3 $8k. Update 1 still moves $2k to H3, and Update 2 now moves $2k back to H1 because of the petrol shock.
+5. **Stop thresholds were too loose.** They let ads run up to 50% over the $4.00 target. All three now scale at ≤ $3.20, stop above $4.00 after $2,500, and get one revision in between.
+6. **H1 and H2 overlapped.** H1 is now about the price only ("Na your price") and H2 keeps driver choice. H2 no longer counts "Ride safe" as a message it serves, only as support.
+
+**Brief:**
+- The app screen moves to the top half with exact safe zones, because TikTok and Reels buttons cover the bottom of the frame.
+- The app labels are copied from the real app as it appears in NG-09/10.
+- Fares are ₦4,500 and ₦5,000 on a Yaba → Ikeja route. ₦3,000 looked too low next to Q3's ₦3,900–4,600 and the petrol spike.
+- Lime is #C1F11D, sampled from NG-01. The logo is on screen from 0 s, and subtitles cover sound-off viewing.
+- The must-not list now also blocks readable signs and billboards and words like "cab", "surge" and "save".
+
+**Rejected:** the suggested 16:9 landscape cut. NG-03, the landscape version of the split screen, cost $8.44 per first ride. I dropped the 1:1 cut instead.
+
+**Not verified:** the Pidgin voiceover lines and the ₦ fare levels are my judgment.
+
+Upload the `.xlsx` before the deadline. If you want the repo link in the optional "Links to your AI conversations" cell, I can add it: https://github.com/crichalchemist/ai-marketing-hackathon.
+
+## User
+
+go ahead and add the link
+
+## Claude
+
+> 🔧 Bash: Add repo link to the conversation-links cell
+
+I added the repo link to the "Links to your AI conversations" cell in `stage-1-solution.xlsx`. Every cell in the sheet is filled now, so the file is ready to upload on your stage page. The template asks for one link per line and the repo is the only one.
+
+The conversation in the repo stops before the review pass's final summary and this last exchange. I can push an updated export after you've uploaded.
+
+## User
+
+found the third update: Bolt is running a new-rider offer in Nigeria: 40% off the first three rides. The ads have been live in Meta Ad Library since 24 September. Your budget and your brief stay the same. Adjust your plan if you think you should.
+
+## Claude
+
+> 🔧 Bash: Write Update 3 response into the sheet
+
+## User (sent mid-turn)
+
+14 minutes left
+
+## Claude
+
+I've written Update 3 into the sheet. The file is complete and clean: no empty cells and no banned words. **Upload `stage-1-solution.xlsx` now.**
+
+**Update 3 response:** I changed nothing, and the answer explains why:
+- We'd already found this exact Bolt ad in the Loudbox competitor library and planned around it.
+- Matching it with a discount would make our ad off-brand, since a promo alone doesn't count, and start a price war with the market's promo leader.
+- H1 already answers it: you set the price on every ride, not just three. That also covers fuel-driven price jumps after Bolt's offer ends. Bolt is never named in our ads.
+- Bolt's offer may push October's cost per first ride up, so we read results with the existing "one revision, re-read at $2,500" rule rather than stopping ads early.
+
+Once you've uploaded, tell me and I'll push the final conversation export to the repo.
+
+## User
+
+uploaded
+
+## Claude
+
+> 🔧 Bash: Final conversation export, commit and push
+
